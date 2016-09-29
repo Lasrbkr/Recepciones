@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="ControlRM.App">
+	<Application.Resources>
+		<!-- Application resource dictionary -->
+		<ResourceDictionary>
+			<!-- Colors -->
+			<Color x:Key="DarkBlueColor">#1976D2</Color>
+			<Color x:Key="BlueColor">#2196F3</Color>
+			<Color x:Key="WhiteColor">#FFFFFF</Color>
+			<Color x:Key="BlackTextColor">#212121</Color>
+			<Color x:Key="GrayTextColor">#757575</Color>
+			<Color x:Key="DividerColor">#BDBDBD</Color>
+		</ResourceDictionary>
+	</Application.Resources>
+</Application>

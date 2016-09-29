@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms"
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+		x:Class="ControlRM.MasterPage"
+		xmlns:s="clr-namespace:ControlRM.Dictionary"
+		Title="Recepciones de Canal">
+	<ContentPage.Content>
+		<Grid>
+			<Grid.RowDefinitions>
+				<RowDefinition Height="auto" />
+				<RowDefinition Height="*" />
+			</Grid.RowDefinitions>
+			<Frame Grid.Row="0" BackgroundColor="{DynamicResource DarkBlueColor}">
+				<Label Text="Bienvenido" FontSize="24" TextColor="{DynamicResource WhiteColor}" />
+			</Frame>
+			<Frame Grid.Row="1" BackgroundColor="{DynamicResource WhiteColor}" >
+            	<ListView x:Name="listView" VerticalOptions="FillAndExpand" SeparatorVisibility="Default" >
+                	<ListView.ItemTemplate>
+                   		<DataTemplate>
+                       		<ImageCell Text="{Binding Titulo}" ImageSource="{Binding IconSource}" TextColor="{DynamicResource BlackTextColor}" />
+                   		</DataTemplate>
+                	</ListView.ItemTemplate>
+            	</ListView>
+			</Frame>
+		</Grid>
+	</ContentPage.Content>
+</ContentPage>
